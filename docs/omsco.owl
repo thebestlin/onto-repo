@@ -1,0 +1,4293 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.MetroRiskOntology.org#"
+     xml:base="http://www.MetroRiskOntology.org"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/">
+    <owl:Ontology rdf:about="http://www.MetroRiskOntology.org"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedAcceleration -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedAcceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Acceleration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedAngularVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedAngularVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AngularVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCO2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCO2">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CO2Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCrackOpeningDisplacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCrackOpeningDisplacement">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCrowdFlow -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCrowdFlow">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCrowdFlowDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCrowdFlowDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCrowdFlowRate -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCrowdFlowRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedCurrent">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Current"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedDisplacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedDisplacement">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Displacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedElectricEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedElectricEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedEnergyConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedEnergyConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedFalling -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedFalling">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEvent"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Falling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedFireSourceLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedFireSourceLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedFlameTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedFlameTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FlameTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedHarmfulGasComponents -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedHarmfulGasComponents">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedHumidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedHumidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Humidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedIndividualSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedIndividualSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedNoise -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedNoise">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseDecibels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedPM10 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedPM10">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM10Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedPM2.5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedPM2.5">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM2.5Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedPersonnelDensity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedPersonnelDensity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedPipeTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedPipeTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PipeTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedPower -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedPower">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Power"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedQueueSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedQueueSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#QueueSize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedRunning -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedRunning">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEvent"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Running"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedSmokeConcentration -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedSmokeConcentration">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedStrain -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedStrain">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Strain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedStress -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedStress">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Stress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observedProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedTotalPopulationInTheArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedTotalPopulationInTheArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedTripleAxialTiltAngle -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedTripleAxialTiltAngle">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedVoltage -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedVoltage">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Voltage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedWaterDepth -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedWaterDepth">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterDepth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedWaterFlowVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedWaterFlowVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedWaterLeakage -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedWaterLeakage">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterLeakage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservedXYZVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#ObservedXYZVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#ObservedStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#XYZVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByAccelerationMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByAccelerationMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalVibration"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByAngularVelocityMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByAngularVelocityMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalVibration"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByCO2Monitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByCO2Monitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualityWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByCrackOpeningDisplacementMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByCrackOpeningDisplacementMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalCrack"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByCrowdFlowRateMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByCrowdFlowRateMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByCurrentMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByCurrentMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByDisplacementMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByDisplacementMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralDisplacement"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByElectricEnergyMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByElectricEnergyMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByEventObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByEventObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByFallingMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByFallingMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEventObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingEvent"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByFireSourceLocationMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByFireSourceLocationMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByFlameTemperatureMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByFlameTemperatureMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByHarmfulGasComponentsMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByHarmfulGasComponentsMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByHumidityMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByHumidityMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalHumidity"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByIndividualSpeedMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByIndividualSpeedMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByNoiseMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByNoiseMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalNoise"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByObservation">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByPM10Monitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByPM10Monitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualityWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByPM2.5Monitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByPM2.5Monitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualityWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByPersonnelDensityMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByPersonnelDensityMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByPipeTemperatureMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByPipeTemperatureMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByPowerMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByPowerMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByQueueSizeMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByQueueSizeMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByRunningMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByRunningMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEventObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningEvent"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedBySmokeConcentrationMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedBySmokeConcentrationMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByStrainMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByStrainMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralDeformation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByStressMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByStressMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralOverload"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByStructuralObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByStructuralObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByTemperatureMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByTemperatureMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalTemperature"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByTotalPopulationInTheAreaMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByTotalPopulationInTheAreaMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByTripleAxialTiltAngleMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByTripleAxialTiltAngleMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralTilt"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByVoltageMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByVoltageMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByWaterDepthMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByWaterDepthMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FloodWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByWaterFlowVelocityMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByWaterFlowVelocityMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FloodWarning"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByWaterLeakageMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByWaterLeakageMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralCorrosion"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#detectedByXYZVelocityMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#detectedByXYZVelocityMonitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#detectedByStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AbnormalVibration"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalCrackOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalCrackOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalCrack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalEnergyConsumptionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalEnergyConsumptionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalHumidityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalHumidityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalHumidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalNoiseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalNoiseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalNoise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalState -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalState">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalTemperatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalTemperatureOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAbnormalVibrationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAbnormalVibrationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AbnormalVibration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAccelerationProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAccelerationProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CanopyColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Truss"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Acceleration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAirConditioningUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAirConditioningUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEquipment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AirConditioningUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAirQualityWarningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAirQualityWarningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AirQualityWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAngularVelocityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasAngularVelocityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CanopyColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Truss"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AngularVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasFeatureOfInterest"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCO2Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCO2Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CO2Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCanopyColumn -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCanopyColumn">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CanopyColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasConnectionNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasConnectionNode">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCrackOpeningDisplacementProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCrackOpeningDisplacementProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Pillar"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCrowdFlowDirectionProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCrowdFlowDirectionProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCrowdFlowProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCrowdFlowProblemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCrowdFlowProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCrowdFlowProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCrowdFlowRateProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCrowdFlowRateProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasCurrentProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasCurrentProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirConditioningUnit"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DistributionBox"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Current"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasDisplacementProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasDisplacementProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Pillar"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Displacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasDistributionBox -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasDistributionBox">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEquipment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#DistributionBox"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasElectricEnergyProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasElectricEnergyProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirConditioningUnit"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DistributionBox"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEnergyConsumptionProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEnergyConsumptionProblemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Equipment"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEnvironmentalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEnvironmentalProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEquipment">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasFeatureOfInterest"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEventProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEventProblemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasEventProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasEventProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFallingEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFallingEventOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEventProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FallingEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFallingProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFallingProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEventProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Falling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFeatureOfInterest">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFireSourceLocationProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFireSourceLocationProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFireWarningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFireWarningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFlameTemperatureProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFlameTemperatureProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FlameTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasFloodWarningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasFloodWarningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FloodWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasGlassFacadeCable -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasGlassFacadeCable">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#GlassFacadeCable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasHarmfulGasComponentsProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasHarmfulGasComponentsProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasHumidityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasHumidityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Humidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasIndividualSpeedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasIndividualSpeedProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasLargeCrowdFlowOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasLargeCrowdFlowOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasMaintenanceOverdue -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasMaintenanceOverdue">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasAbnormalState"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#MaintenanceOverdue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasNoiseProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasNoiseProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseDecibels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasNotWorking -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasNotWorking">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasAbnormalState"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NotWorking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPM10Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPM10Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM10Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPM2.5Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPM2.5Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM2.5Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPersonnelDensityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPersonnelDensityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPillar -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPillar">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Pillar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPipeTemperatureProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPipeTemperatureProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PipeTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPlatformLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPlatformLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasArea"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPowerProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPowerProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirConditioningUnit"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DistributionBox"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Power"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasProblemOf">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasProperty">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasPumpAssembly -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasPumpAssembly">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEquipment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasQueueSizeProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasQueueSizeProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#QueueSize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasRunningEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasRunningEventOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEventProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#RunningEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasRunningProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasRunningProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEventProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Running"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasSmokeConcentrationProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasSmokeConcentrationProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStationConcourseLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStationConcourseLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasArea"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStationForecourt -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStationForecourt">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasArea"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StationForecourt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStrainProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStrainProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#GlassFacadeCable"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Strain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStressProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStressProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#GlassFacadeCable"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Stress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralColumn -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralColumn">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralColumn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralCorrosionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralCorrosionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralCorrosion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralDeformationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralDeformationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralDeformation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralDisplacementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralDisplacementOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralDisplacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralOverloadOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralOverloadOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralOverload"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralProblemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralProblemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructuralTiltOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructuralTiltOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProblemOf"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralTilt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasFeatureOfInterest"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasTemperatureProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasTemperatureProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationConcourseLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasTotalPopulationInTheAreaProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasTotalPopulationInTheAreaProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasCrowdFlowProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PlatformLevel"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasTransferCorridor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasTransferCorridor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasArea"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TransferCorridor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasTripleAxialTiltAngleProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasTripleAxialTiltAngleProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Pillar"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasTruss -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasTruss">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Truss"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasVoltageProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasVoltageProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnergyConsumptionProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirConditioningUnit"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DistributionBox"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PumpAssembly"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Voltage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasWaitingHall -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasWaitingHall">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasArea"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaitingHall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasWaterDepthProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasWaterDepthProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationForecourt"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterDepth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasWaterFlowVelocityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasWaterFlowVelocityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasEnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StationForecourt"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasWaterLeakageProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasWaterLeakageProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Pillar"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterLeakage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasXYZVelocityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#hasXYZVelocityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#hasStructuralProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CanopyColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ConnectionNode"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralColumn"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Truss"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#XYZVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#locatedIn">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeAccelerationObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeAccelerationObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeAngularVelocityObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeAngularVelocityObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByAirQualitySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByAirQualitySensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByCrowdFlowSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByCrowdFlowSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeBySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByDigitalCrackMeter -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByDigitalCrackMeter">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByEnergyConsumptionSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByEnergyConsumptionSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeBySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByEnvironmentalSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeBySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByEventSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByEventSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeBySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByHarmfulGasDetector -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByHarmfulGasDetector">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByInclinationGauge -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByInclinationGauge">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByLowPowerDisplacementSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByLowPowerDisplacementSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByLowPowerStrainSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByLowPowerStrainSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByLowPowerStressSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByLowPowerStressSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByMachineVisionSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByMachineVisionSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByCrowdFlowSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByMatchingCurrentTransformer -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByMatchingCurrentTransformer">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnergyConsumptionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByNoiseSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByNoiseSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByPanoramicCamera -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByPanoramicCamera">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEventSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByPeopleCountingSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByPeopleCountingSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByCrowdFlowSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeBySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeBySensor">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeBySmokeSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeBySmokeSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByStructuralSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByStructuralSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeBySensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByTemperatureAndHumiditySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByTemperatureAndHumiditySensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByTemperatureSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByTemperatureSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnergyConsumptionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByThermalImagingCamera -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByThermalImagingCamera">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByUltrasonicFlowRateSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByUltrasonicFlowRateSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByUltrasonicLevelGauge -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByUltrasonicLevelGauge">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnvironmentalSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByUprightGrapheneSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByUprightGrapheneSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByVibrationSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByVibrationSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByStructuralSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AccelerationMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AngularVelocityMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeByWirelessMeteringMeter -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeByWirelessMeteringMeter">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeByEnergyConsumptionSensor"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCO2Observation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCO2Observation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CO2Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCrackOpeningDisplacementObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCrackOpeningDisplacementObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCrowdFlowDirectionObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCrowdFlowDirectionObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCrowdFlowObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCrowdFlowObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCrowdFlowRateObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCrowdFlowRateObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeCurrentObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeCurrentObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CurrentMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeDisplacementObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeDisplacementObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#DisplacementMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeElectricEnergyObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeElectricEnergyObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeEnvironmentalObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeEnvironmentalObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeEventObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeEventObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeFallingObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeFallingObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEventObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FallingMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeFireSourceLocationObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeFireSourceLocationObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeFlameTemperatureObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeFlameTemperatureObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeHarmfulGasComponentsObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeHarmfulGasComponentsObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeHumidityObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeHumidityObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HumidityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeIndividualSpeedObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeIndividualSpeedObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeNoiseObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeNoiseObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeObservation">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madePM10Observation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madePM10Observation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM10Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madePM2.5Observation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madePM2.5Observation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM2.5Monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madePersonnelDensityObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madePersonnelDensityObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madePipeTemperatureObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madePipeTemperatureObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madePowerObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madePowerObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PowerMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeQueueSizeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeQueueSizeObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#QueueSizeMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeRunningObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeRunningObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEventObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#RunningMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeSmokeConcentrationObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeSmokeConcentrationObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeStrainObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeStrainObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StrainMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeStressObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeStressObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StressMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeStructuralObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeStructuralObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeTemperatureObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeTemperatureObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TemperatureMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeTotalPopulationInTheAreObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeTotalPopulationInTheAreObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeCrowdFlowObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeTripleAxialTiltAngleObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeTripleAxialTiltAngleObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeVoltageObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeVoltageObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnergyConsumptionObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#VoltageMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeWaterDepthObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeWaterDepthObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterDepthMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeWaterFlowVelocityObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeWaterFlowVelocityObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeEnvironmentalObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeWaterLeakageObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeWaterLeakageObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterLeakageMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#madeXYZVelocityObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#madeXYZVelocityObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#madeStructuralObservation"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#XYZVelocityMonitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observedProperty">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observes">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesAcceleration -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesAcceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Acceleration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesAngularVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesAngularVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#AngularVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCO2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCO2">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CO2Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCrackOpeningDisplacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCrackOpeningDisplacement">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#DigitalCrackMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrackOpeningDisplacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCrowdFlow -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCrowdFlow">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observes"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCrowdFlowDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCrowdFlowDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCrowdFlowRate -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCrowdFlowRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowRate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesCurrent">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MatchingCurrentTransformer"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Current"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesDisplacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesDisplacement">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Displacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesElectricEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesElectricEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#ElectricEnergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesEnergyConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesEnergyConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observes"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observes"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observes"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#EventProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesFalling -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesFalling">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEvent"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Falling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesFireSourceLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesFireSourceLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FireSourceLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesFlameTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesFlameTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#FlameTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesHarmfulGasComponents -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesHarmfulGasComponents">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasDetector"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#HarmfulGasComponents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesHumidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesHumidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Humidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesIndividualSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesIndividualSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#IndividualSpeed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesNoise -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesNoise">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#NoiseSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#NoiseDecibels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesPM10 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesPM10">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM10Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesPM2.5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesPM2.5">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#AirQualitySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PM2.5Concentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesPersonnelDensity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesPersonnelDensity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PersonnelDensity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesPipeTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesPipeTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#PipeTemperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesPower -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesPower">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Power"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesQueueSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesQueueSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#MachineVisionSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#QueueSize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesRunning -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesRunning">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEvent"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PanoramicCamera"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Running"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesSmokeConcentration -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesSmokeConcentration">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#SmokeConcentration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesStrain -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesStrain">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStrainSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Strain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesStress -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesStress">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#LowPowerStressSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Stress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observes"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesTotalPopulationInTheArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesTotalPopulationInTheArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesCrowdFlow"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#PeopleCountingSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TotalPopulationInTheArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesTripleAxialTiltAngle -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesTripleAxialTiltAngle">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#InclinationGauge"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#TripleAxialTiltAngle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesVoltage -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesVoltage">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnergyConsumption"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#WirelessMeteringMeter"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#Voltage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesWaterDepth -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesWaterDepth">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicLevelGauge"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterDepth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesWaterFlowVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesWaterFlowVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterFlowVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesWaterLeakage -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesWaterLeakage">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#UprightGrapheneSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#WaterLeakage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#observesXYZVelocity -->
+
+    <owl:ObjectProperty rdf:about="http://www.MetroRiskOntology.org#observesXYZVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.MetroRiskOntology.org#observesStructure"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#VibrationSensor"/>
+        <rdfs:range rdf:resource="http://www.MetroRiskOntology.org#XYZVelocity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasAlarm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#hasAlarm">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#hasSimpleResult -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#hasSimpleResult">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#lastMaintenanceTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#lastMaintenanceTime">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#maintenanceCycle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#maintenanceCycle">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#operationalState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#operationalState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#resultTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#resultTime">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#valueUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.MetroRiskOntology.org#valueUnit">
+        <rdfs:domain rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalCrack -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalCrack">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalEnergyConsumption -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalEnergyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalHumidity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalHumidity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalNoise -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalNoise">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalStatus -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalStatus"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalTemperature -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AbnormalVibration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AbnormalVibration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Acceleration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AccelerationMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AccelerationMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AirConditioningUnit -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AirConditioningUnit">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AirQualitySensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AirQualitySensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AirQualityWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AirQualityWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Alarm -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Alarm"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AngularVelocity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AngularVelocity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#AngularVelocityMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#AngularVelocityMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Area -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Area">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CO2Concentration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CO2Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CO2Monitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CO2Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CanopyColumn -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CanopyColumn">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ConnectionNode -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#ConnectionNode">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrackOpeningDisplacement -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrackOpeningDisplacement">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrackOpeningDisplacementMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowDirection -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowDirection">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowDirectionMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowObservation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowObservation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowProperty">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowRate -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowRate">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowRateMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowSensors -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowSensors">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CrowdFlowWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CrowdFlowWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Current -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Current">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#CurrentMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#CurrentMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#DigitalCrackMeter -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#DigitalCrackMeter">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Displacement -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Displacement">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#DisplacementMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#DisplacementMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#DistributionBox -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#DistributionBox">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ElectricEnergy -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#ElectricEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ElectricEnergyMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#ElectricEnergyMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnergyConsumptionObservation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnergyConsumptionObservation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnergyConsumptionProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnergyConsumptionProperty">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnergyConsumptionSensors -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnergyConsumptionSensors">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnergyConsumptionWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnergyConsumptionWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnvironmentalObservation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnvironmentalObservation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnvironmentalProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnvironmentalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnvironmentalSensors -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnvironmentalSensors">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EnvironmentalWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EnvironmentalWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Equipment -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EventObservation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EventObservation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EventProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EventProperty">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EventSensors -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EventSensors">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#EventWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#EventWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Falling -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Falling">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FallingEvent -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FallingEvent">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FallingMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FallingMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FireSourceLocation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FireSourceLocation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FireSourceLocationMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FireSourceLocationMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FireWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FireWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FlameTemperature -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FlameTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FlameTemperatureMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FlameTemperatureMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#FloodWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#FloodWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#GlassFacadeCable -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#GlassFacadeCable">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#HarmfulGasComponents -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#HarmfulGasComponents">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#HarmfulGasComponentsMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#HarmfulGasDetector -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#HarmfulGasDetector">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Humidity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#HumidityMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#HumidityMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#InclinationGauge -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#InclinationGauge">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#IndividualSpeed -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#IndividualSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#IndividualSpeedMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#IndividualSpeedMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#LargeCrowdFlowWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#LargeCrowdFlowWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Location -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Location"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#LowPowerDisplacementSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#LowPowerDisplacementSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#LowPowerStrainSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#LowPowerStrainSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#LowPowerStressSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#LowPowerStressSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#MachineVisionSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#MachineVisionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#MaintenanceOverdue -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#MaintenanceOverdue">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#AbnormalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#MatchingCurrentTransformer -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#MatchingCurrentTransformer">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#NoiseDecibels -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#NoiseDecibels">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#NoiseMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#NoiseMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#NoiseSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#NoiseSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#NotWorking -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#NotWorking">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#AbnormalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Observation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Observation"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PM10Concentration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PM10Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PM10Monitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PM10Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PM2.5Concentration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PM2.5Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PM2.5Monitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PM2.5Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PanoramicCamera -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PanoramicCamera">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventSensors"/>
+        <rdfs:comment>range: 360°
+resolution: 8K (7680x4320 pixels)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PeopleCountingSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PeopleCountingSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowSensors"/>
+        <rdfs:comment>accuracy: ±0.2%
+passenger flow_resolution: 1 person
+density_resolution: 0.1 person/m²
+queue length_resolution: 1 person
+trajectory_resolution: 1 person
+speed_resolution: 0.1 m/s
+large crowd_resolution: 1 person
+direction: bidirectional recognition</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PersonnelDensity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PersonnelDensity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PersonnelDensityMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PersonnelDensityMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Pillar -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Pillar">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PipeTemperature -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PipeTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PipeTemperatureMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PipeTemperatureMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PlatformLevel -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PlatformLevel">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Power -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Power">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PowerMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PowerMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#PumpAssembly -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#PumpAssembly">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#QueueSize -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#QueueSize">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#QueueSizeMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#QueueSizeMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Running -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Running">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#RunningEvent -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#RunningEvent">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#RunningMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#RunningMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EventObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Sensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Sensor"/>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#SmokeConcentration -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#SmokeConcentration">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#SmokeConcentrationMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#SmokeSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#SmokeSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StationConcourseLevel -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StationConcourseLevel">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StationForecourt -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StationForecourt">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Strain -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Strain">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StrainMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StrainMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Stress -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Stress">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StressMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StressMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralColumn -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralColumn">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralCorrosion -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralCorrosion">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralDeformation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralDeformation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralDisplacement -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralDisplacement">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralObservation -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralObservation">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralOverload -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralOverload">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralProperty -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralProperty">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralSensors -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralSensors">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralTilt -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralTilt">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#StructuralWarning -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#StructuralWarning">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Alarm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Structure -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Structure">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Temperature -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TemperatureAndHumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TemperatureMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TemperatureMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#ThermalImagingCamera -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#ThermalImagingCamera">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TotalPopulationInTheArea -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TotalPopulationInTheArea">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TotalPopulationInTheAreaMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#CrowdFlowObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TransferCorridor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TransferCorridor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TripleAxialTiltAngle -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TripleAxialTiltAngle">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#TripleAxialTiltAngleMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Truss -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Truss">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#UltrasonicFlowRateSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#UltrasonicLevelGauge -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#UltrasonicLevelGauge">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#UprightGrapheneSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#UprightGrapheneSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#VibrationSensor -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#VibrationSensor">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#Voltage -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#Voltage">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#VoltageMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#VoltageMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaitingHall -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaitingHall">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterDepth -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterDepth">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterDepthMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterDepthMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterFlowVelocity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterFlowVelocity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterFlowVelocityMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnvironmentalObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterLeakage -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterLeakage">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WaterLeakageMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WaterLeakageMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#WirelessMeteringMeter -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#WirelessMeteringMeter">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#EnergyConsumptionSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#XYZVelocity -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#XYZVelocity">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#XYZVelocityMonitoring -->
+
+    <owl:Class rdf:about="http://www.MetroRiskOntology.org#XYZVelocityMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.MetroRiskOntology.org#StructuralObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#RS485烟雾传感器001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.MetroRiskOntology.org#RS485烟雾传感器001">
+        <rdf:type rdf:resource="http://www.MetroRiskOntology.org#SmokeSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.MetroRiskOntology.org#DS-2TD6237T-50H4L/W001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.MetroRiskOntology.org#DS-2TD6237T-50H4L/W001">
+        <rdf:type rdf:resource="http://www.MetroRiskOntology.org#ThermalImagingCamera"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
